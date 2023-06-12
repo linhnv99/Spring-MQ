@@ -1,4 +1,4 @@
-package com.linhnv.springbootkafka.message;
+package com.linhnv.springbootmq.message;
 
 import lombok.Builder;
 
