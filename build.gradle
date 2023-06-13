@@ -19,7 +19,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.amqp:spring-rabbit:3.0.4'
+    implementation 'org.springframework.boot:spring-boot-starter-amqp'
 
     implementation 'org.springframework.boot:spring-boot-starter-web'
     compileOnly 'org.projectlombok:lombok'

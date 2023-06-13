@@ -1,8 +1,6 @@
 spring:
-  profiles:
-    active: usage_message
-
-logging:
-  level:
-    org: ERROR
-
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: rabbitmq
+    password: 123456

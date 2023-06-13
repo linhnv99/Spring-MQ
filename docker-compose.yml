@@ -2,13 +2,14 @@ version: '3.8'
 
 services:
   rabbitmq:
-    image: 'bitnami/rabbitmq:latest'
+    image: rabbitmq:management
     environment:
-      - RABBITMQ_USERNAME=rabbitmq
-      - RABBITMQ_PASSWORD=rabbitmq
+      - RABBITMQ_DEFAULT_USER=rabbitmq
+      - RABBITMQ_DEFAULT_PASS=123456
     ports:
-      - '15672:15672'
-    volumes:
-      - 'data:/bitnami/rabbitmq/mnesia'
-volumes:
-  data:
+      - "5672:5672"
+      - "15672:15672"
+
+networks:
+  default:
+    driver: bridge
